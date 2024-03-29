@@ -5,41 +5,55 @@ body {
 
 ul.topnav {
   list-style-type: none;
-  margin-left: 450px;
-  margin-right: 350px;
+  margin: 0 400px;
   padding: 0; 
   overflow: hidden;
 }
 
 ul.topnav li {
     float: left;
+    margin: 32px 0px;
 }
 
 ul.topnav li a {
   display: block;
   text-align: center;
   text-decoration: none;
-  vertical-align: middle;
-}
-
-ul.topnav li.right a:hover:not(.active) {
-    color: #7a7a7a;
 }
 
 ul.topnav li.name a {
-    font-size: 27px;
+    font-size: 30px;
     color: white;
     font-weight: bold;
 }
 
-ul.topnav li.right {
+ul.topnav li.right, ul.topnav li.right-edge {
     float: right;
     font-size: 18px;
-    margin: 10px 20px;
+    margin: 40px 40px;
 }
 
-ul.topnav li.right a {
+ul.topnav li.right {
+}
+
+ul.topnav li.right-edge {
+    margin-right: 0px;
+}
+
+ul.topnav li.right a, ul.topnav li.right-edge a {
     color: #bebebe;
+}
+
+ul.topnav li.right  a:hover:not(.active), ul.topnav li.right-edge a:hover:not(.active) {
+    color: #7a7a7a;
+}
+
+#hero-wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    margin: 30px 400px;
 }
 
 .hero-sec {
@@ -48,15 +62,27 @@ ul.topnav li.right a {
 }
 
 .hero-sec h1 {
-    font-size: 40px;
+    font-size: 80px;
     font-weight: bold;
     color: #ffffff;
+    max-width: 50%;
+    margin: 0;
 }
 
 .hero-sec p {
     font-size: 20px;
     margin-top: 20px;
+    margin-right: 50px;
     color: #868686;
+    max-width: 100%;
+}
+
+.hero-img {
+}
+
+.hero-img img {
+    width: 100%;
+    height: 60%;
 }
 
 @media screen and (max-width: 600px) {
@@ -64,24 +90,3 @@ ul.topnav li.right a {
     float: none;
 }
 }
-
-#wrapper {
-    display: flex;
-    margin: 300px;
-}
-
-#parent {
-    width: auto;
-    height: 700px;
-    background-image:url(../../assets/img/hero-img.jpg);
-    background-size: contain;
-    background-position: center right;
-    background-repeat: no-repeat;
-    padding: 0;
-}
-
-#child {
-    position: relative;
-    top: 0px;
-    left: 20px;
-} 
