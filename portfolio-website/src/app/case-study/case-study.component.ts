@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-case-study',
@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './case-study.component.scss'
 })
 export class CaseStudyComponent {
-
+  @Input() csLogo = "";
+  @Input() csRole = "";
+  @Input() csHeader = "";
+  @Input() csDesc = "";
+  @Input() csBtnText = "";
+  @Input() csImg = "";
+  @Input() csBgColor: any[] = [];
 }
+
+

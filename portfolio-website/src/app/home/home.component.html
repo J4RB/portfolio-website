@@ -12,18 +12,28 @@
 
     <div id="hero-wrapper">
         <div class="hero-sec">
-            <h1>JACOB</h1>
-            <h1>BREGNDAHL</h1>
-            <h1>LARSEN</h1>
+            <h1>JACOB BREGNDAHL LARSEN</h1>
             <h2>ROBOTICS ENGINEER</h2>
             <p>I am a robotics engineer with a passion for creating innovative solutions within the field of robotics. I am seeking exciting opportunities where I can apply my skills and contribute to the development of advanced technological solutions.</p>
-            <a class="fa fa-linkedin-square" style="font-size:18px; color: #bebebe;" href="https://www.linkedin.com/in/jacob-larsen-9b7013239/"></a>
-        </div>
-        <div class="hero-img">
-            <img src="../assets/img/hero-img.jpg" alt="hero-img">
+            <a class="fa fa-linkedin-square" style="font-size:18px; color: #bebebe; text-decoration: none;" href="https://www.linkedin.com/in/jacob-larsen-9b7013239/"></a>
         </div>
     </div>
 
-    <app-case-study></app-case-study>
+    <div id="projects">
+        <app-case-study [csLogo]="'../../assets/img/ur-logo.png'" [csRole]="'GRADUATION PROJECT'" [csHeader]="'DEVELOPMENT OF A MOTION CONTROL SYSTEM AS PART OF AN EDUCATIONAL ROBOT PLATFORM'" [csDesc]="'As part of my bachelor of engineering degree in robot systems, I collaborated with Universal Robots on my graduation project.'" [csBtnText]="'UNDER NDA - NO CASE STUDY'" [csImg]="'../../assets/img/ur-case-study.png'" [csBgColor]="[86, 160, 211]"></app-case-study>
+    
+        <app-case-study [csLogo]="'../../assets/img/er-logo.png'" [csRole]="'ENGINEERING INTERNSHIP'" [csHeader]="'DEVELOPMENT OF TEST MONITORING TOOL'" [csDesc]="'As part of my bachelor of engineering degree in robot systems, I did an engineering internship at Enabled Robotics.'" [csBtnText]="'UNDER NDA - NO CASE STUDY'" [csImg]="'../../assets/img/er-case-study.png'" [csBgColor]="[128, 88, 164]"></app-case-study>
+    
+        <app-case-study [csLogo]="'../../assets/img/sdu-logo.png'" [csRole]="'4. SEMESTER PROJECT'" [csHeader]="'THE INVERTED PENDULUM'" [csDesc]="'...'" [csBtnText]="'VIEW CASE STUDY'" [csImg]="'../../assets/img/er-case-study.png'" [csBgColor]="[150, 150, 150]"></app-case-study>
+    
+        <app-case-study [csLogo]="'../../assets/img/sdu-logo.png'" [csRole]="'3. SEMESTER PROJECT'" [csHeader]="'THE THROWING ROBOT'" [csDesc]="'...'" [csBtnText]="'VIEW CASE STUDY'" [csImg]="'../../assets/img/er-case-study.png'" [csBgColor]="[150, 150, 150]"></app-case-study>
+    
+        <app-case-study [csLogo]="'../../assets/img/sdu-logo.png'" [csRole]="'2. SEMESTER PROJECT'" [csHeader]="'THE ROBOT GRIPPER'" [csDesc]="'...'" [csBtnText]="'VIEW CASE STUDY'" [csImg]="'../../assets/img/er-case-study.png'" [csBgColor]="[150, 150, 150]"></app-case-study>
+    
+        <app-case-study [csLogo]="'../../assets/img/sdu-logo.png'" [csRole]="'1. SEMESTER PROJECT'" [csHeader]="'THE DRAWING ROBOT'" [csDesc]="'...'" [csBtnText]="'VIEW CASE STUDY'" [csImg]="'../../assets/vid/drawing-robot-timelapse.gif'" [csBgColor]="[150, 150, 150]"></app-case-study>
+    </div>
+
+    <app-footer></app-footer>
+
 </body>
 </html>
