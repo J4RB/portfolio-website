@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { CaseStudyComponent } from '../case-study/case-study.component';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { FooterComponent } from '../footer/footer.component';
+import { CaseStudyComponent } from '../components/case-study/case-study.component';
+import { NavbarComponent } from '../layout/navbar/navbar.component';
+import { FooterComponent } from '../layout/footer/footer.component';
 
 @Component({
   selector: 'app-home',
