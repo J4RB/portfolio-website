@@ -8,13 +8,13 @@ import { Component, Input } from '@angular/core';
   styleUrl: './case-study.component.scss'
 })
 export class CaseStudyComponent {
-  @Input() csLogo = "";
-  @Input() csRole = "";
-  @Input() csHeader = "";
-  @Input() csDesc = "";
-  @Input() csBtnText = "";
-  @Input() csImg = "";
-  @Input() csBgColor: any[] = [];
+  @Input() logo = "";
+  @Input() role = "";
+  @Input() header = "";
+  @Input() desc = "";
+  @Input() buttonText = "";
+  @Input() image = "";
+  @Input() backgroundColor: any[] = [];
 }
 
 

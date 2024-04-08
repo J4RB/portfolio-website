@@ -19,19 +19,17 @@
         </div>
     </div>
 
-    <div id="projects">
-        <app-case-study [csLogo]="'../../assets/img/ur-logo.png'" [csRole]="'GRADUATION PROJECT'" [csHeader]="'DEVELOPMENT OF A MOTION CONTROL SYSTEM AS PART OF AN EDUCATIONAL ROBOT PLATFORM'" [csDesc]="'As part of my bachelor of engineering degree in robot systems, I collaborated with Universal Robots on my graduation project.'" [csBtnText]="'UNDER NDA - NO CASE STUDY'" [csImg]="'../../assets/img/ur-case-study.png'" [csBgColor]="[86, 160, 211]"></app-case-study>
-    
-        <app-case-study [csLogo]="'../../assets/img/er-logo.png'" [csRole]="'ENGINEERING INTERNSHIP'" [csHeader]="'DEVELOPMENT OF TEST MONITORING TOOL'" [csDesc]="'As part of my bachelor of engineering degree in robot systems, I did an engineering internship at Enabled Robotics.'" [csBtnText]="'UNDER NDA - NO CASE STUDY'" [csImg]="'../../assets/img/er-case-study.png'" [csBgColor]="[128, 88, 164]"></app-case-study>
-    
-        <app-case-study [csLogo]="'../../assets/img/sdu-logo.png'" [csRole]="'4. SEMESTER PROJECT'" [csHeader]="'THE INVERTED PENDULUM'" [csDesc]="'...'" [csBtnText]="'VIEW CASE STUDY'" [csImg]="'../../assets/img/er-case-study.png'" [csBgColor]="[150, 150, 150]"></app-case-study>
-    
-        <app-case-study [csLogo]="'../../assets/img/sdu-logo.png'" [csRole]="'3. SEMESTER PROJECT'" [csHeader]="'THE THROWING ROBOT'" [csDesc]="'...'" [csBtnText]="'VIEW CASE STUDY'" [csImg]="'../../assets/img/er-case-study.png'" [csBgColor]="[150, 150, 150]"></app-case-study>
-    
-        <app-case-study [csLogo]="'../../assets/img/sdu-logo.png'" [csRole]="'2. SEMESTER PROJECT'" [csHeader]="'THE ROBOT GRIPPER'" [csDesc]="'...'" [csBtnText]="'VIEW CASE STUDY'" [csImg]="'../../assets/img/er-case-study.png'" [csBgColor]="[150, 150, 150]"></app-case-study>
-    
-        <app-case-study [csLogo]="'../../assets/img/sdu-logo.png'" [csRole]="'1. SEMESTER PROJECT'" [csHeader]="'THE DRAWING ROBOT'" [csDesc]="'...'" [csBtnText]="'VIEW CASE STUDY'" [csImg]="'../../assets/vid/drawing-robot-timelapse.gif'" [csBgColor]="[150, 150, 150]"></app-case-study>
-    </div>
+    <div id="projects" *ngFor="let caseStudy of caseStudies">
+        <app-case-study 
+            [logo]="caseStudy.logo"
+            [role]="caseStudy.role"
+            [header]="caseStudy.header"
+            [desc]="caseStudy.desc"
+            [buttonText]="caseStudy.buttonText"
+            [image]="caseStudy.image"
+            [backgroundColor]="caseStudy.backgroundColor">
+        </app-case-study>
+        </div>
 
     <app-footer></app-footer>
 
