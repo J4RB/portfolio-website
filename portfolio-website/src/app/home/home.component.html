@@ -4,20 +4,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.component.scss">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <title>Title of the document</title>
 </head>
 
 <body>
-    <app-navbar></app-navbar>
-
-    <div id="hero-wrapper">
-        <div class="hero-sec">
-            <h1>JACOB BREGNDAHL LARSEN</h1>
-            <h2>ROBOTICS ENGINEER</h2>
-            <p>I am a robotics engineer with a passion for creating innovative solutions within the field of robotics. I am seeking exciting opportunities where I can apply my skills and contribute to the development of advanced technological solutions.</p>
-            <a class="fa fa-linkedin-square" style="font-size:18px; color: #bebebe; text-decoration: none;" href="https://www.linkedin.com/in/jacob-larsen-9b7013239/"></a>
+    <div id='overlay'>
+        <div class="section">
+            <h4>&lt;div&gt;</h4>
+            <div class="vertical-line" #lineDivRef></div>
+            <h4>&lt;/div&gt;</h4>
+        </div>
+        <div class="div-content" #heroRef>
+            <div class="hero-text">
+                <h3>// Hi, my name is</h3>
+                <h1>Jacob Larsen.</h1>
+                <h2>Robotics Engineer</h2>
+            </div>
+            <div class="section-and-text">
+                <div class="section">
+                    <h4>&lt;p&gt;</h4>
+                    <div class="vertical-line" #linePRef></div>
+                    <h4>&lt;/p&gt;</h4>
+                </div>
+                <p #pRef>I am a robotics engineer with a passion for creating innovative solutions within the field of robotics. I am seeking exciting opportunities where I can apply my skills and contribute to the development of advanced technological solutions.</p>
+            </div>
         </div>
     </div>
+    <div id="background-text">
+        <h1>&lt;Hello<br> World&gt;</h1>
+    </div>
+    <section id="section04" class="demo">
+        <a href="#projects"><span></span></a>
+    </section>
+    <a class="fa fa-linkedin-square fa_custom" href="https://www.linkedin.com/in/jacob-larsen-9b7013239/" target="_blank"></a>
 
     <div id="projects" *ngFor="let caseStudy of caseStudies">
         <app-case-study 
@@ -29,7 +51,7 @@
             [image]="caseStudy.image"
             [backgroundColor]="caseStudy.backgroundColor">
         </app-case-study>
-        </div>
+    </div>
 
     <app-footer></app-footer>
 

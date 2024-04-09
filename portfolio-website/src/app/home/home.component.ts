@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { NgFor } from '@angular/common';
 
 import { CaseStudyComponent } from '../components/case-study/case-study.component';
@@ -14,6 +14,25 @@ import { FooterComponent } from '../layout/footer/footer.component';
 })
 
 export class HomeComponent {
+  @ViewChild('pRef') pRef!: ElementRef;
+  @ViewChild('linePRef') linePRef!: ElementRef;
+  @ViewChild('heroRef') heroRef!: ElementRef;
+  @ViewChild('lineDivRef') lineDivRef!: ElementRef;
+
+  ngAfterViewInit() {
+    this.updateLineHeight();
+  }
+
+  @HostListener('window:resize')
+  onWindowResize() {
+    this.updateLineHeight();
+  }
+
+  private updateLineHeight() {
+    this.linePRef.nativeElement.style.height = `${this.pRef.nativeElement.offsetHeight+ 10}px`;
+    this.lineDivRef.nativeElement.style.height = `${this.heroRef.nativeElement.offsetHeight + 10}px`;
+  }
+
   caseStudies = [
     {
       logo: '../../assets/img/ur-logo.png',

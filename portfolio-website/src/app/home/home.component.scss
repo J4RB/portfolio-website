@@ -1,36 +1,194 @@
 
-body {
+* {
     margin: 0;
-    font-family: teko, sans-serif; 
-    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
 }
 
-#hero-wrapper {
-    margin: 30px 400px;
-    margin-bottom: 150px;
-}
-
-.hero-sec {
+#overlay {
+    display: flex;
     color: white;
-    text-align: left;
+    position: absolute;
+    z-index:100;
+    align-items: center;
+    // justify-content: center;
+    height: 80vh;
+    margin-left: 10%;
+    // border: 2px solid red;
 }
 
-.hero-sec h1 {
-    font-size: 80px;
+#overlay h3 {
+    font-size: clamp(0.9rem, 1.4vw, 1.4rem);
+    font-weight: 300;
+    color: #33A18E;
+}
+
+#overlay h1 {
+    font-size: clamp(2rem, 7vw, 7rem);
+    font-weight: 700;
+    color: white;
+    letter-spacing: -2px;
+}
+
+#overlay h2 {
+    font-size: clamp(1.4rem, 5vw, 5rem);
+    font-weight: 300;
+    color: #33A18E;
+    letter-spacing: -1px;
+}
+
+.hero-text {
+    line-height: 1;
+}
+
+.section-and-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max(60%, 200px);
+    max-width: 700px;
+}
+
+.section-and-text p {
+    max-width: 1500px;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // height: 100%;
+    // border: 2px solid green;
+}
+
+.section h4 {
+    font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+    font-weight: 300;
+    color: rgb(255, 255, 255, 0.2);
+    margin: 2px 0;
+}
+
+.section .vertical-line {
+    border-left: 1px solid rgb(255, 255, 255, 0.2);
+    height: inherit;
+}
+
+#background-text {
+    display: flex;
+    font-size: clamp(1rem, 10vw, 15rem);
     font-weight: bold;
-    color: #ffffff;
-    max-width: 50%;
-    margin: 0;
+    color: rgb(0, 0, 0, 0.15);
+    line-height: 1;
+    justify-content: center;
+    align-items: center;
+    white-space: pre;
+    height: 94vh;
 }
 
-.hero-sec p {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-right: 50px;
-    color: #868686;
-    max-width: 100%;
+.demo a {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+.demo a:hover {
+    opacity: .5;
+}
+#section04 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+}
+@-webkit-keyframes sdb04 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+        -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+}
+@keyframes sdb04 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
 }
 
-@media screen and (max-width: 600px) {
+.fa_custom {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size:22px;
+    color: #bebebe;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 790px) {
+    #overlay {
+        margin-left: 5%;
+    }
+}
+
+// body {
+//     margin: 0;
+//     font-family: teko, sans-serif; 
+//     height: 100vh;
+// }
+
+// #hero-wrapper {
+//     margin: 30px 400px;
+//     margin-bottom: 150px;
+// }
+
+// .hero-sec {
+//     color: white;
+//     text-align: left;
+// }
+
+// .hero-sec h1 {
+//     font-size: 80px;
+//     font-weight: bold;
+//     color: #ffffff;
+//     max-width: 50%;
+//     margin: 0;
+// }
+
+// .hero-sec p {
+//     font-size: 20px;
+//     margin-top: 20px;
+//     margin-right: 50px;
+//     color: #868686;
+//     max-width: 100%;
+// }
+
+// @media screen and (max-width: 600px) {
   
-}
+// }
