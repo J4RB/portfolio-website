@@ -9,5 +9,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  navbarActive = false;
 
+  toggleNav() {
+    this.navbarActive = !this.navbarActive;
+  }
 } 

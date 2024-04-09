@@ -4,15 +4,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar.component.scss">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
     <title>Title of the document</title>
 </head>
 
 <body>
-    <ul class="topnav">
-        <li class="name"><a routerLink="">JBL</a></li>
-        <li class="right-edge"><a routerLink="/contact">contact</a></li>
-        <li class="right"><a routerLink="/about">about</a></li>
-        <li class="right"><a href="#projects">projects</a></li>
-    </ul>
-</body>
+    <nav>
+      <div class="logo">
+        <a routerLink="">JL</a>
+      </div>
+      <ul>
+        <li>
+          <a href="#projects"><span>01.</span> Projects</a>
+        </li>
+        <li>
+          <a routerLink="/about"><span>02.</span> About</a>
+        </li>
+        <li>
+          <a routerLink="/contact"><span>03.</span> Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger" [class.hamburger-active]="navbarActive" (click)="toggleNav()">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+    <div class="menubar" [class.active]="navbarActive">
+      <ul>
+          <li>
+            <a href="#projects"><span>01.</span> Projects</a>
+        </li>
+        <li>
+          <a routerLink="/about"><span>02.</span> About</a>
+        </li>
+        <li>
+          <a routerLink="/contact"><span>03.</span> Contact</a>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
