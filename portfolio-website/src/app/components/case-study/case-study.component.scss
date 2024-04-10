@@ -50,7 +50,7 @@
     max-height: fit-content;
 }
 
-.case-study-desc-btn button {
+.button {
     position: absolute;
     left: 0px;
     bottom: 100px;
@@ -61,6 +61,14 @@
     padding: 10px 10px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+}
+  
+a.button[href="#"] {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: lightgray;
+    border: 2px solid lightgray;
 }
 
 .case-study-wrapper .case-study-desc button:hover:not(.active) {

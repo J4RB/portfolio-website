@@ -13,6 +13,7 @@ export class CaseStudyComponent {
   @Input() header = "";
   @Input() desc = "";
   @Input() buttonText = "";
+  @Input() buttonLink = "";
   @Input() image = "";
   @Input() backgroundColor: any[] = [];
 }

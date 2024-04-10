@@ -39,7 +39,8 @@ export class HomeComponent {
       role: 'GRADUATION PROJECT',
       header: 'DEVELOPMENT OF A MOTION CONTROL SYSTEM AS PART OF AN EDUCATIONAL ROBOT PLATFORM',
       desc: 'As part of my bachelor of engineering degree in robot systems, I collaborated with Universal Robots on my graduation project.',
-      buttonText: 'UNDER NDA - NO CASE STUDY',
+      buttonText: 'UNDER NDA',
+      buttonLink: '#',
       image: '../../assets/img/ur-case-study.png',
       backgroundColor: [86, 160, 211]
     },
@@ -48,7 +49,8 @@ export class HomeComponent {
       role: 'ENGINEERING INTERNSHIP',
       header: 'DEVELOPMENT OF TEST MONITORING TOOL',
       desc: 'As part of my bachelor of engineering degree in robot systems, I did an engineering internship at Enabled Robotics.',
-      buttonText: 'UNDER NDA - NO CASE STUDY',
+      buttonText: 'UNDER NDA',
+      buttonLink: '#',
       image: '../../assets/img/er-case-study.png',
       backgroundColor: [128, 88, 164]
     },
@@ -57,7 +59,8 @@ export class HomeComponent {
       role: '4. SEMESTER PROJECT',
       header: 'THE INVERTED PENDULUM',
       desc: '...',
-      buttonText: 'VIEW CASE STUDY',
+      buttonText: 'DETAILS',
+      buttonLink: 'https://github.com/Andreasgdp/Inverted-Pendulum',
       image: '../../assets/img/er-case-study.png',
       backgroundColor: [150, 150, 150]
     },
@@ -66,7 +69,8 @@ export class HomeComponent {
       role: '3. SEMESTER PROJECT',
       header: 'THE THROWING ROBOT',
       desc: '...',
-      buttonText: 'VIEW CASE STUDY',
+      buttonText: 'DETAILS',
+      buttonLink: 'https://github.com/Andreasgdp/robo-throw',
       image: '../../assets/img/er-case-study.png',
       backgroundColor: [150, 150, 150]
     },
@@ -75,7 +79,8 @@ export class HomeComponent {
       role: '2. SEMESTER PROJECT',
       header: 'THE ROBOT GRIPPER',
       desc: '...',
-      buttonText: 'VIEW CASE STUDY',
+      buttonText: 'DETAILS',
+      buttonLink: 'https://github.com/Andreasgdp/Robot-hand-semester-2',
       image: '../../assets/img/er-case-study.png',
       backgroundColor: [150, 150, 150]
     },
@@ -84,7 +89,8 @@ export class HomeComponent {
       role: '1. SEMESTER PROJECT',
       header: 'THE DRAWING ROBOT',
       desc: '...',
-      buttonText: 'VIEW CASE STUDY',
+      buttonText: 'DETAILS',
+      buttonLink: 'https://github.com/Andreasgdp/Drawing-robot-semester-1',
       image: '../../assets/vid/drawing-robot-timelapse.gif',
       backgroundColor: [150, 150, 150]
     }
