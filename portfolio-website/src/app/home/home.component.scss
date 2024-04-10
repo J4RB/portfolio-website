@@ -10,29 +10,29 @@
     display: flex;
     color: white;
     position: absolute;
-    z-index:100;
+    z-index: 50;
     align-items: center;
     // justify-content: center;
-    height: 80vh;
-    margin-left: 10%;
+    height: 100%;
+    margin: 0 15%;
     // border: 2px solid red;
 }
 
 #overlay h3 {
-    font-size: clamp(0.9rem, 1.4vw, 1.4rem);
+    font-size: clamp(1rem, 1.2vw, 2.5rem);
     font-weight: 300;
     color: #33A18E;
 }
 
 #overlay h1 {
-    font-size: clamp(2rem, 7vw, 7rem);
+    font-size: clamp(2.2rem, 5.5vw, 14rem);
     font-weight: 700;
     color: white;
     letter-spacing: -2px;
 }
 
 #overlay h2 {
-    font-size: clamp(1.4rem, 5vw, 5rem);
+    font-size: clamp(1.6rem, 4vw, 10rem);
     font-weight: 300;
     color: #33A18E;
     letter-spacing: -1px;
@@ -47,12 +47,11 @@
     justify-content: center;
     align-items: center;
     width: max(60%, 200px);
-    max-width: 700px;
+    max-width: 1000px;
 }
 
 .section-and-text p {
-    max-width: 1500px;
-    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    font-size: clamp(0.8rem, 0.8vw, 1.8rem);
 }
 
 .section {
@@ -64,10 +63,13 @@
 }
 
 .section h4 {
-    font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+    font-size: clamp(0.6rem, 0.8vw, 1.6rem);
     font-weight: 300;
     color: rgb(255, 255, 255, 0.2);
     margin: 2px 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .section .vertical-line {
@@ -77,14 +79,17 @@
 
 #background-text {
     display: flex;
-    font-size: clamp(1rem, 10vw, 15rem);
+    font-size: clamp(1rem, 10vw, 30rem);
     font-weight: bold;
     color: rgb(0, 0, 0, 0.15);
     line-height: 1;
     justify-content: center;
     align-items: center;
     white-space: pre;
-    height: 94vh;
+    height: 100vh;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .demo a {
@@ -153,7 +158,7 @@
 
 @media screen and (max-width: 790px) {
     #overlay {
-        margin-left: 5%;
+        margin: 0 10%;
     }
 }
 
