@@ -61,7 +61,7 @@ export class HomeComponent {
       desc: '...',
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/Inverted-Pendulum',
-      image: '../../assets/img/er-case-study.png',
+      image: '../../assets/vid/inverted-pendulum.mp4',
       backgroundColor: [150, 150, 150]
     },
     {
@@ -71,7 +71,7 @@ export class HomeComponent {
       desc: '...',
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/robo-throw',
-      image: '../../assets/img/er-case-study.png',
+      image: '../../assets/vid/throw.mp4',
       backgroundColor: [150, 150, 150]
     },
     {
@@ -81,7 +81,7 @@ export class HomeComponent {
       desc: '...',
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/Robot-hand-semester-2',
-      image: '../../assets/img/er-case-study.png',
+      image: '../../assets/vid/beer-gripper.mp4',
       backgroundColor: [150, 150, 150]
     },
     {
@@ -91,7 +91,7 @@ export class HomeComponent {
       desc: '...',
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/Drawing-robot-semester-1',
-      image: '../../assets/vid/drawing-robot-timelapse.gif',
+      image: '../../assets/vid/drawing-robot-timelapse.mp4',
       backgroundColor: [150, 150, 150]
     }
   ];

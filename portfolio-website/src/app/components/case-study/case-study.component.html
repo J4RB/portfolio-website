@@ -10,11 +10,12 @@
 <body>
     <div class="case-study-wrapper" style="--bg-color:{{backgroundColor}}">
         <div class="case-study-img">
-            <img src={{image}} alt="ur-case-study">
+            <img *ngIf="caseStudyType === 'image'" [src]="image" alt="case-study-img">
+            <video *ngIf="caseStudyType === 'video'" [src]="image" autoplay loop [muted]="'muted'"></video>
         </div>
         <div class="case-study-desc">
             <div class="case-study-desc-logo">
-                <img src={{logo}} alt="ur-logo">
+                <img [src]="logo" alt="ur-logo">
             </div>
             <div class="case-study-desc-text">
                 <h3>{{role}}</h3>
