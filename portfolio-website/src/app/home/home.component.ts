@@ -63,8 +63,7 @@ export class HomeComponent {
       desc: 'Together as a group, we developed the control theory for an inverted pendulum and implemented it on a physical system. The project was part of the 4th semester of my bachelor degree in robot systems.',
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/Inverted-Pendulum',
-      image: '',
-      // image: '../../assets/vid/inverted-pendulum.mp4',
+      image: '../../assets/vid/inverted-pendulum.mp4',
       backgroundColor: [255, 252, 245],
       textColor: [0, 0, 0]
     },
@@ -75,8 +74,7 @@ export class HomeComponent {
       desc: 'Together as a group, we developed a robot that could play beer pong. The project includes the development of a robot system that can identify the ball and cup with the use of machine vision, then pick the ball up and throw it at any spot in a given target area.',
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/robo-throw',
-      image: '',
-      // image: '../../assets/vid/throw.mp4',
+      image: '../../assets/vid/throw.mp4',
       backgroundColor: [255, 252, 245],
       textColor: [0, 0, 0]
     },
@@ -87,8 +85,7 @@ export class HomeComponent {
       desc: 'Together as a group, we developed a robot gripper for the UR5, designed to pick up cans. The project includes the development of the gripper mechanism, the design of the electronics, the control of the electronics from a Raspberry Pi, and a URCap to control the gripper.',
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/Robot-hand-semester-2',
-      image: '',
-      // image: '../../assets/vid/beer-gripper.mp4',
+      image: '../../assets/vid/beer-gripper.mp4',
       backgroundColor: [255, 252, 245],
       textColor: [0, 0, 0]
     },
@@ -99,8 +96,7 @@ export class HomeComponent {
       desc: 'Together as a group, we developed the software to control a three-axis drawing robot. The project includes the preprocessing of the image, the development of the software to control the robot, optimization of drawing algorithm, and implementation on a B&R PLC.',
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/Drawing-robot-semester-1',
-      image: '',
-      // image: '../../assets/vid/drawing-robot-timelapse.mp4',
+      image: '../../assets/vid/drawing-robot-timelapse.mp4',
       backgroundColor: [255, 252, 245],
       textColor: [0, 0, 0]
     }
