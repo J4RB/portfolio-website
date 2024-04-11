@@ -66,6 +66,7 @@
     font-weight: 400;
     // max-height: fit-content;
     padding: 10px 0;
+    margin-bottom: 5%;
 }
 
 .button-wrapper {
@@ -132,4 +133,47 @@ a.button[href="#"] {
 
 .case-study-img video {
     object-fit: cover;
+}
+
+@media screen and (max-width: 790px) {
+    .case-study-desc {
+        position: absolute;
+        background-color: rgb(255, 255, 255, 0.7);
+        padding: 0 3%;
+        margin: 0 5%;
+        max-height: 65vh;
+        color: rgb(0, 0, 0);
+    }
+
+    .case-study-desc h3 {
+        color: rgb(0, 0, 0);
+    }
+
+    .case-study-desc h1 {
+        color: rgb(0, 0, 0);
+    }
+
+    .button {
+        color: rgb(0, 0, 0);
+        border: rgb(0, 0, 0) 2px solid;
+    }
+
+    a.button[href="#"] {
+        color: rgb(0, 0, 0, 0.5);
+        border: rgb(0, 0, 0, 0.5)  2px solid;
+        // border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .case-study-img {
+        max-width: 100%;
+        width: 100%;
+        justify-content: right;
+    }
+}
+
+@media (max-aspect-ratio: 300/650) {
+    .case-study-desc {
+        // max-width: 75vw;
+        width: 80vw;
+    }
 }
