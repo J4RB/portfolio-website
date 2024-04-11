@@ -1,89 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
 .case-study-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    column-gap: 5px;
-    position: relative;
-    /* background-color: rgb(86, 160, 211); */
+    display: flex;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr;
+    // position: relative;
     background-color: rgb(var(--bg-color));
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 97%;
-    height: 700px;
+    height: 65vh;
+    max-width: 4000px;
+    // min-width: 0;
 }
 
 .case-study-desc {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    color: white;
-    margin-left: 75px;
-    width: 40%; 
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(var(--text-color));
+    margin: 0 2vw;
+    width: 50%;
+    max-width: 800px;
+    min-width: 35%;
+    z-index: 100;
 }
 
-.case-study-desc-logo img {
-    position: absolute;
-    left: 0px;
-    top: 60px;
-    width: 300px;
-    height: 50px;
+.case-study-desc-logo {
+    width: 40%;
+    height: 11%;
     object-fit: contain;
     object-position: left;
     pointer-events: none;
+    margin-top: 5%;
+}
+
+.case-study-desc-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60%;
 }
 
 .case-study-desc h3 {
-    margin-top: 250px;
-    color: rgba(255, 255, 255, 0.5); 
+    font-size: clamp(0.8rem, 1vw, 1.5rem);
+    font-weight: 500;
+    color: rgb(var(--text-color));
+    padding: 10px 0;
 }
 
 .case-study-desc h1 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #ffffff;
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+    font-weight: 700;
+    color: rgb(var(--text-color));
+    padding: 10px 0;
 }
 
 .case-study-desc p {
-    margin-bottom: 100px;
-    max-height: fit-content;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    font-weight: 400;
+    // max-height: fit-content;
+    padding: 10px 0;
 }
 
+.button-wrapper {
+    margin-top: auto;
+    margin-bottom: 10%;
+}
+
+// .button-wrapper:has(.button[href="#"]) {
+//     border: 2px solid rgba(255, 255, 255, 0.5);
+// }
+
 .button {
-    position: absolute;
-    left: 0px;
-    bottom: 100px;
-    background: rgb(var(--bg-color));
-    color: white;
+    background: transparent;
+    color: rgb(var(--text-color));
     text-align: center;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 10px 10px;
-    font-weight: bold;
+    // border: 2px solid rgb(255, 255, 255);
+    // padding: 10px 10px;
+    font-size: clamp(0.6rem, 1.5vw, 1rem);
+    font-weight: 500;
     cursor: pointer;
     text-decoration: none;
+    // width: fit-content;
+    padding: 0.5rem 0.5rem;
+    width: fit-content;
+    border: rgb(var(--text-color)) 2px solid;
 }
   
 a.button[href="#"] {
     pointer-events: none;
     cursor: not-allowed;
-    color: lightgray;
-    border: 2px solid lightgray;
+    color: rgba(var(--text-color), 0.5);
+    border: rgba(var(--text-color), 0.5) 2px solid;
+    // border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.case-study-wrapper .case-study-desc button:hover:not(.active) {
-    font-weight: bold;
-    color: black;
-    background-color: white;
+.case-study-wrapper .case-study-desc a:hover:not(.active) {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.case-study-img {
+    display: flex;
+    margin-left: auto;
+    max-width: 65%;
 }
 
 .case-study-img img, video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 700px;
-    object-fit: contain;
-    object-position: right bottom;
-    pointer-events: none;
+    // display: flex;
+    // flex-basis: 50%;
+    // position: absolute;
+    // right: 0;
+    // bottom: 0;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 50;
+}
+
+.case-study-img img {
+    object-fit: scale-down;
+    object-position: bottom right;
+}
+
+.case-study-img video {
+    object-fit: cover;
 }

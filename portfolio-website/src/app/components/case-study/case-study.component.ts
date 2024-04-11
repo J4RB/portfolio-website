@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { NgIf } from '@angular/common';
+import { NgIf, NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-case-study',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, NgStyle],
   templateUrl: './case-study.component.html',
   styleUrl: './case-study.component.scss'
 })
@@ -17,6 +17,7 @@ export class CaseStudyComponent {
   @Input() buttonLink = "";
   @Input() image = "";
   @Input() backgroundColor: any[] = [];
+  @Input() textColor: any[] = [];
 
   caseStudyType!: string;
 

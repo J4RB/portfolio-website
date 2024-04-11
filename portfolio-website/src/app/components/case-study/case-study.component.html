@@ -4,27 +4,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="case-study.component.scss">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Title of the document</title>
 </head>
 
 <body>
-    <div class="case-study-wrapper" style="--bg-color:{{backgroundColor}}">
-        <div class="case-study-img">
-            <img *ngIf="caseStudyType === 'image'" [src]="image" alt="case-study-img">
-            <video *ngIf="caseStudyType === 'video'" [src]="image" autoplay loop [muted]="'muted'"></video>
-        </div>
+    <div class="case-study-wrapper" [ngStyle]="{'--bg-color': backgroundColor, '--text-color': textColor}">
         <div class="case-study-desc">
-            <div class="case-study-desc-logo">
-                <img [src]="logo" alt="ur-logo">
-            </div>
+            <img class="case-study-desc-logo" [src]="logo" alt="ur-logo">
             <div class="case-study-desc-text">
                 <h3>{{role}}</h3>
                 <h1>{{header}}</h1>
                 <p>{{desc}}</p>
             </div>
-            <div class="case-study-desc-btn">
+            <div class="button-wrapper">
                 <a class="button" href="{{buttonLink}}" target="_blank">{{buttonText}}</a>
-            </div> 
+            </div>
+        </div>
+        <div class="case-study-img">
+            <img *ngIf="caseStudyType === 'image'" [src]="image" alt="case-study-img">
+            <video *ngIf="caseStudyType === 'video'" [src]="image" autoplay loop [muted]="'muted'"></video>
         </div>
     </div>
 </body>
