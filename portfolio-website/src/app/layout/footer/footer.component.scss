@@ -1,31 +1,92 @@
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
-}
 *{
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
+	font-family: 'Fira Code';
 }
 
-.footer{
-    background-color: #24262b;
-    padding: 70px 0;
-    margin-top: 30px;
+.parent {
+    position: relative;
+    z-index: 1;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40vh;
+	width: 97vw;
 }
 
-.wrapper{
-	max-width: 1170px;
-	margin:auto;
+#overlay {
+    position: absolute;
+	height: 40vh;
+	width: 97vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 10vw;
 }
 
-.footer-mid h4 {
-    color: #000000;
+#overlay h4 {
+    color: #33A18E;
+	font-weight: 400;
+	font-size: clamp(0.8rem, 1.2vw, 2.5rem);
+	white-space: pre;
+	margin-left: 1vw;
 }
 
-.footer-mid h1 {
-    color: #111;
-    font-size: 10em;;
+#overlay h1 {
+    color: white;
+	font-weight: 500;
+    font-size: clamp(1rem, 8.5vw, 30rem);
+	line-height: 0.9;
 }
 
+.footer-buttons {
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+	margin-left: 1vw;
+}
+
+.button {
+    background: transparent;
+    color: #33A18E;
+    text-align: center;
+    font-size: clamp(0.6rem, 1vw, 2.5rem);
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    width: fit-content;
+    border: #33A18E 2px solid;
+}
+
+#background-text {
+    position: absolute;
+	left: 0;
+	top: 0;
+	height: 40vh;
+	width: 97vw;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+    z-index: -1;
+	color: rgb(0, 0, 0, 0.15);
+	font-size: clamp(1rem, 8.5vw, 30rem);
+    font-weight: bold;
+	-webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.dev-note {
+	display: flex;
+	color: rgb(255, 255, 255, 0.3);
+	font-size: clamp(0.6rem, 0.6vw, 1.5rem);
+	font-weight: 400;
+	margin: 3vh 20px 20px 20px;
+	justify-content: right;
+}
+
+.dev-note span {
+	color: rgb(255, 255, 255, 0.6);
+}
