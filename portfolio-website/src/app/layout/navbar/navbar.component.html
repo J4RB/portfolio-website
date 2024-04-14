@@ -33,13 +33,13 @@
     <div class="menubar" [class.active]="navbarActive">
       <ul>
           <li>
-            <a href="#projects"><span>01.</span> Projects</a>
+            <a href="#projects" (click)="toggleNav()"><span>01.</span> Projects</a>
         </li>
         <li>
-          <a routerLink="/about"><span>02.</span> About</a>
+          <a routerLink="/about" (click)="toggleNav()"><span>02.</span> About</a>
         </li>
         <li>
-          <a routerLink="/contact"><span>03.</span> Contact</a>
+          <a routerLink="/contact" (click)="toggleNav()"><span>03.</span> Contact</a>
         </li>
       </ul>
     </div>
