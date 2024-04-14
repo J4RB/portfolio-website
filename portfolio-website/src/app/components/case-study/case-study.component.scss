@@ -171,7 +171,7 @@ a.button[href="#"] {
     }
 }
 
-@media (max-aspect-ratio: 300/650) {
+@media screen and (max-width: 420px) {
     .case-study-desc {
         // max-width: 75vw;
         width: 80vw;
