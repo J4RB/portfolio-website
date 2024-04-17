@@ -1,1 +1,35 @@
-<h1 style="color: white;">ABOUT</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.component.scss">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="about-sec">
+            <div class="line-nums-fade">
+                <div class="line-nums" #lineNums>
+                    <div *ngFor="let num of lineNumbers">
+                        {{num}}
+                    </div> 
+                </div>
+            </div>
+            <div class="about-text" #aboutText>
+                <br><br>
+                <span class="header">&lt;about me&gt;</span>
+                <p>Hey, I'm Jacob Larsen, a robotics engineer based in Denmark. My passion lies in developing innovative solutions within the field of robotics. I'm constantly fueled by curiosity, always seeking to expand my knowledge of new technologies and coding practices. Whether it's diving into software development or exploring the latest advancements, I thrive on the excitement of pushing boundaries and exploring the endless possibilities in this ever-evolving field.</p>
+                <br><br>
+                <span class="header">&lt;skills&gt;</span>
+                <p>C++ / Python / Java / PLC Programming / ROS / Docker / SCRUM / Linux / Git / Algorithms / Data Structures / Machine Vision / Kinematics / Control System Design / Modeling of Electromechanical Systems / Signal Processing / Android Programming / Cybersecurity / HTML / CSS / Typescript / Angular</p>
+                <br><br>
+            </div>
+        </div>
+        <div class="pic">
+            <img src="../../assets/img/about-me-img.jpg" alt="about-me-img">
+        </div>
+    </div>
+</body>
+</html>
