@@ -5,9 +5,12 @@
 }
 
 body {
+    position: relative;
     padding: 0;
     margin: 0;
     font-family: 'Fira Code';
+    background-color: #0C0C0C;
+    z-index: 10000;
 }
 
 nav {
@@ -15,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 150;
+    z-index: 10000;
     padding-top: 15px;
     width: 90vw;
     max-width: 4000px;
