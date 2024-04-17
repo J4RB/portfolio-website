@@ -36,7 +36,7 @@
 #overlay h1 {
     color: white;
 	font-weight: 500;
-    font-size: clamp(1rem, 8.5vw, 30rem);
+    font-size: clamp(2rem, 8.5vw, 30rem);
 	line-height: 0.9;
 }
 
@@ -89,4 +89,22 @@
 
 .dev-note span {
 	color: rgb(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 790px) {
+    .parent {
+		height: 15vh;
+	}
+
+	#overlay {
+		height: 15vh;
+	}
+
+	#background-text {
+		height: 15vh;
+	}
+
+	.dev-note {
+		text-align: center;
+	}
 }
