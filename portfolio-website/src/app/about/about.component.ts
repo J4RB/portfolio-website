@@ -22,6 +22,11 @@ export class AboutComponent {
     this.adjustLineNumsHeight();
   }
 
+  @HostListener('window:load')
+  onWindowLoad() {
+    this.adjustLineNumsHeight();
+  }
+
   @HostListener('window:resize')
   onWindowResize() {
     this.adjustLineNumsHeight();
