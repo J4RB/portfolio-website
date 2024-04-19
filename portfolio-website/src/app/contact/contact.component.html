@@ -1,1 +1,36 @@
-<h1 style="color: white;">CONTACT</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.component.scss">
+</head>
+<body>
+    <div id='overlay'>
+        <h3>// Get in touch</h3>
+        <form [formGroup]="contactForm" (ngSubmit)="onSend()">
+            <div class="inputs">
+                <div class="name-input">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" formControlName="name">
+                </div>
+                <div class="email-input">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" formControlName="email">
+                </div>
+            </div>
+            <label class="message-label" for="message">Message</label>
+            <textarea id="message" formControlName="message"></textarea>
+            <div class="bottom-wrapper">
+                <button type="submit" [disabled]="!contactForm.valid">Send</button>
+                <a class="fa linkedin-icon fa_custom" href="https://www.linkedin.com/in/jacob-larsen-9b7013239/" target="_blank">&#xf08c;</a>
+                <a class="mail-icon fa_custom" href="mailto:jlarsen2107@gmail.com">&#9993;</a>
+            </div>
+        </form>
+    </div>
+    <div id="background-text">
+        <h1>&lt;contact&gt;</h1>
+    </div>
+</body>
+</html>
