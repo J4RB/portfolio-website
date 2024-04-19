@@ -9,25 +9,19 @@
 <body>
     <div id='overlay'>
         <h3>// Get in touch</h3>
-        <form [formGroup]="contactForm" (ngSubmit)="onSend()">
-            <div class="inputs">
-                <div class="name-input">
-                    <label for="name">Name</label>
-                    <input id="name" type="text" formControlName="name">
-                </div>
-                <div class="email-input">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" formControlName="email">
+        <div class="line"></div>
+        <div class="link-wrapper">
+            <div class="column">
+                <div class="link">
+                    MAIL <a href="mailto:jlarsen2107@gmail.com">jlarsen2107&#64;gmail.com</a>
                 </div>
             </div>
-            <label class="message-label" for="message">Message</label>
-            <textarea id="message" formControlName="message"></textarea>
-            <div class="bottom-wrapper">
-                <button type="submit" [disabled]="!contactForm.valid">Send</button>
-                <a class="fa linkedin-icon fa_custom" href="https://www.linkedin.com/in/jacob-larsen-9b7013239/" target="_blank">&#xf08c;</a>
-                <a class="mail-icon fa_custom" href="mailto:jlarsen2107@gmail.com">&#9993;</a>
+            <div class="column">
+                <div class="link">
+                    SOCIAL <a href="https://www.linkedin.com/in/jacob-larsen-9b7013239/" target="_blank">LinkedIn</a>
+                </div>
             </div>
-        </form>
+        </div>
     </div>
     <div id="background-text">
         <h1>&lt;contact&gt;</h1>

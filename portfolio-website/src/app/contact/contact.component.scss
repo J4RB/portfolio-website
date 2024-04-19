@@ -16,7 +16,7 @@
     z-index: 50;
     // align-items: center;
     justify-content: center;
-    height: 92vh;
+    height: 70vh;
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
@@ -27,90 +27,6 @@
     font-weight: 300;
     color: #33A18E;
     margin: 1% 0;
-}
-
-#overlay form {
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    // width: 100%;
-}
-
-#overlay form label {
-    font-size: clamp(1rem, 0.8vw, 2.5rem);
-    font-weight: 300;
-    color: rgb(255, 255, 255, 0.6);
-    // margin: 10px 0;
-}
-
-#overlay form .message-label {
-    margin-top: 1vh;
-}
-
-#overlay form input {
-    margin: 10px 0;
-    padding: 5px;
-    border: 1px solid #33A18E;
-    border-radius: 2px;
-    font-size: clamp(1rem, 0.8vw, 2.5rem);
-    background-color: transparent;
-    margin: 5px 0;
-    width: 100%;
-    color: white;
-}
-
-#overlay .inputs {
-    display: flex;
-    column-gap: 0.5vw;
-    // width: 80vw;
-}
-
-#overlay .name-input, #overlay .email-input {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: #fff !important;
-}
-
-#overlay form textarea {
-    margin: 10px 0;
-    padding: 5px;
-    border: 1px solid #33A18E;
-    border-radius: 2px;
-    font-size: clamp(1rem, 0.8vw, 2.5rem);
-    background-color: transparent;
-    margin: 5px 0;
-    width: 100%;
-    height: 10vh;
-    color: white;
-    resize: vertical;
-    max-height: 50vh;
-    min-height: 10vh;
-}
-
-.bottom-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-#overlay form button {
-    margin: 10px 0;
-    padding: 5px;
-    border: 1px solid #33A18E;
-    border-radius: 2px;
-    font-size: clamp(1rem, 0.8vw, 2.5rem);
-    background-color: #33A18E;
-    color: white;
-    width: 10vw;
-    min-width: fit-content;
 }
 
 #background-text {
@@ -126,52 +42,60 @@ input:-webkit-autofill:active {
     user-select: none; /* Standard syntax */
 }
 
-.fa_custom {
-    // position: absolute;
-    // bottom: 10px;
-    // left: 10px;
-    color: #bebebe;
-    text-decoration: none;
-    margin-left: 5px;
-    text-align: center;
+#overlay .line {
+    width: 100%;
+    height: 1px;
+    background-color: #33A18E;
+    margin-bottom: 10px;
 }
 
-.fa_custom:first-of-type {
-    margin-left: auto;
+#overlay .link-wrapper {
+    display: flex;
 }
 
-.linkedin-icon {
+#overlay .column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10vw;
+}
+
+#overlay .link {
+    display: flex;
     font-size: clamp(1rem, 1vw, 2.5rem);
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 5px;
+    column-gap: 1vw;
 }
 
-.mail-icon {
-    // font-size:32px;
-    font-size: clamp(1.4rem, 1.4vw, 3.5rem);
-    padding-bottom: 1px;
+#overlay .link a, #overlay .link a:visited {
+    color: rgb(51, 161, 142, 0.6);
+    text-decoration: none;
+}
+
+#overlay .link a:hover, #overlay .link a:active {
+    color: #33A18E;
+}
+
+#overlay .link a:before {
+    content: '\1F865';
+    margin-right: 2px;
 }
 
 @media screen and (max-width: 912px) {
-    #overlay form button {
-        width: 20vw;
-    }
-}
-
-@media screen and (max-width: 790px) {
     #overlay {
         width: 80vw;
-    }
-
-    #overlay form button {
-        width: 30vw;
     }
 }
 
 @media screen and (max-width: 650px) {
-    #overlay .inputs {
-        flex-direction: column; 
+    #overlay .link-wrapper {
+        flex-direction: column;
+        margin-right: 0;
     }
+}
 
-    #overlay form label {
-        margin-top: 1vh;
+@media screen and (max-width: 325px) {
+    #overlay .link {
+        flex-direction: column;
     }
 }
