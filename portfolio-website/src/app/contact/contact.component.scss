@@ -64,12 +64,16 @@
     font-size: clamp(1rem, 1vw, 2.5rem);
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 5px;
-    column-gap: 1vw;
+}
+
+#overlay .content {
+    margin-right: 1vw;
 }
 
 #overlay .link a, #overlay .link a:visited {
     color: rgb(51, 161, 142, 0.6);
     text-decoration: none;
+    margin-left: 0.5vw;
 }
 
 #overlay .link a:hover, #overlay .link a:active {
@@ -77,10 +81,9 @@
 }
 
 #overlay .link a:before {
-    // content: '\1F865';
     content: "\2197";
     margin-right: 2px;
-    // font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: clamp(1rem, 1vw, 2.5rem);
 }
 
 @media screen and (max-width: 912px) {
