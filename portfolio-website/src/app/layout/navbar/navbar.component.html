@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="navbar.component.scss">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
     <title>Title of the document</title>
 </head>
 
@@ -22,6 +23,12 @@
         </li>
         <li>
           <a routerLink="/contact"><span>03.</span> Contact</a>
+        </li>
+        <li>
+          <div class="vertical-line"></div>
+        </li>
+        <li>
+          <i class="gg-dark-mode" (click)="toggleTheme()"></i>
         </li>
       </ul>
       <div class="hamburger" [class.hamburger-active]="navbarActive" (click)="toggleNav()">

@@ -1,0 +1,31 @@
+[theme="dark"] {
+    --bg-color: 12, 12, 12;
+    --text-color: 255, 255, 255;
+    --bg-text-color: 0, 0, 0, 0.2;
+    --bg-menubar-color: 49, 49, 49;
+    --dev-note-text-color: 255, 255, 255, 0.3;
+    --dev-note-text-span-color: 255, 255, 255, 0.6;
+    --line-nums-text-color: linear-gradient(0deg,
+                            rgba(255,255,255,0.0) 0%,
+                            rgba(255,255,255,0.2) 5%,
+                            rgba(255,255,255,0.5) 15%,
+                            rgba(255,255,255,0.5) 85%,
+                            rgba(255,255,255,0.2) 95%,
+                            rgba(255,255,255,0.0) 100%)
+}
+
+[theme="light"] {
+    --bg-color: 255, 255, 255;
+    --text-color: 0, 0, 0;
+    --bg-text-color: 0, 0, 0, 0.075;
+    --bg-menubar-color: 210, 210, 210;
+    --dev-note-text-color: 0, 0, 0, 0.6;
+    --dev-note-text-span-color: 0, 0, 0, 0.8;
+    --line-nums-text-color: linear-gradient(0deg,
+                            rgba(0,0,0,0.0) 0%,
+                            rgba(0,0,0,0.2) 5%,
+                            rgba(0,0,0,0.6) 15%,
+                            rgba(0,0,0,0.6) 85%,
+                            rgba(0,0,0,0.2) 95%,
+                            rgba(0,0,0,0.0) 100%)
+}

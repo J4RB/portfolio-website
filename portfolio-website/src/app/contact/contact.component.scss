@@ -9,7 +9,7 @@
 #overlay {
     display: flex;
     flex-direction: column;
-    color: white;
+    // color: white;
     position: absolute;
     left: 0;
     right: 0;
@@ -33,7 +33,7 @@
     display: flex;
     font-size: clamp(1rem, 8vw, 30rem);
     font-weight: bold;
-    color: rgb(0, 0, 0, 0.15);
+    color: rgb(var(--bg-text-color));
     justify-content: center;
     align-items: center;
     height: 92dvh;
@@ -62,7 +62,7 @@
 #overlay .link {
     display: flex;
     font-size: clamp(1rem, 1vw, 2.5rem);
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(var(--text-color), 0.6);
     margin-bottom: 5px;
 }
 
@@ -71,7 +71,7 @@
 }
 
 #overlay .link a, #overlay .link a:visited {
-    color: rgb(51, 161, 142, 0.6);
+    color: rgb(51, 161, 142, 0.7);
     text-decoration: none;
     margin-left: 0.5vw;
 }

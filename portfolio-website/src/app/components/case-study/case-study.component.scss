@@ -10,7 +10,7 @@
     // grid-template-columns: 1fr 1fr;
     // grid-template-rows: 1fr;
     // position: relative;
-    background-color: rgb(var(--bg-color));
+    background-color: rgb(var(--cs-bg-color));
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +23,7 @@
 .case-study-desc {
     display: flex;
     flex-direction: column;
-    color: rgb(var(--text-color));
+    color: rgb(var(--cs-text-color));
     margin: 0 2vw;
     width: 50%;
     max-width: 800px;
@@ -50,14 +50,14 @@
 .case-study-desc h3 {
     font-size: clamp(0.8rem, 1vw, 1.5rem);
     font-weight: 500;
-    color: rgb(var(--text-color));
+    color: rgb(var(--cs-text-color));
     padding: 10px 0;
 }
 
 .case-study-desc h1 {
     font-size: clamp(1.2rem, 2vw, 2.5rem);
     font-weight: 700;
-    color: rgb(var(--text-color));
+    color: rgb(var(--cs-text-color));
     padding: 10px 0;
 }
 
@@ -78,18 +78,18 @@
 }
 
 .tech-used span {
-    background-color: rgb(var(--bg-color));
+    background-color: rgb(var(--cs-bg-color));
     filter: brightness(85%);
     border-radius: 5em / 5em;
     padding: 5px 10px;
     font-size: clamp(0.8rem, 1vw, 1.2rem);
-    color: rgb(var(--text-color));
+    color: rgb(var(--cs-text-color));
 }
 
 .tech-used span:hover {
     filter: brightness(100%);
-    background-color: rgb(var(--text-color));
-    color: rgb(var(--bg-color));
+    background-color: rgb(var(--cs-text-color));
+    color: rgb(var(--cs-bg-color));
 }
 
 .button-wrapper {
@@ -103,7 +103,7 @@
 
 .button {
     background: transparent;
-    color: rgb(var(--text-color));
+    color: rgb(var(--cs-text-color));
     text-align: center;
     // border: 2px solid rgb(255, 255, 255);
     // padding: 10px 10px;
@@ -114,14 +114,14 @@
     // width: fit-content;
     padding: 0.5rem 0.5rem;
     width: fit-content;
-    border: rgb(var(--text-color)) 2px solid;
+    border: rgb(var(--cs-text-color)) 2px solid;
 }
   
 a.button[href="#"] {
     pointer-events: none;
     cursor: not-allowed;
-    color: rgba(var(--text-color), 0.5);
-    border: rgba(var(--text-color), 0.5) 2px solid;
+    color: rgba(var(--cs-text-color), 0.5);
+    border: rgba(var(--cs-text-color), 0.5) 2px solid;
     // border: 2px solid rgba(255, 255, 255, 0.5);
 }
 

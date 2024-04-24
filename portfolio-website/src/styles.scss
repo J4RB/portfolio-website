@@ -1,8 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import "themes";
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #0C0C0C;
+  background-color: rgb(var(--bg-color));
+  color: rgb(var(--text-color));
 }
 
 html {
@@ -29,5 +31,5 @@ html {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #383838; 
+  background: #383838;
 }

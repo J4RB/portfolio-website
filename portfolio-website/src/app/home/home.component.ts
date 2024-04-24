@@ -52,7 +52,7 @@ export class HomeComponent {
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/Inverted-Pendulum',
       image: '../../assets/vid/inverted-pendulum.mp4',
-      backgroundColor: [255, 252, 245],
+      backgroundColor: [200, 200, 200],
       textColor: [0, 0, 0],
       techUsed: ['Control System Design', 'Kinematics', 'PLC Programming', 'Git', 'SCRUM']
     },
@@ -64,7 +64,7 @@ export class HomeComponent {
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/robo-throw',
       image: '../../assets/vid/throw.mp4',
-      backgroundColor: [255, 252, 245],
+      backgroundColor: [200, 200, 200],
       textColor: [0, 0, 0],
       techUsed: ['C++', 'Python', 'Machine Vision', 'Kinematics', 'URSim', 'MySQL', 'Git', 'SCRUM']
     },
@@ -76,7 +76,7 @@ export class HomeComponent {
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/Robot-hand-semester-2',
       image: '../../assets/vid/beer-gripper.mp4',
-      backgroundColor: [255, 252, 245],
+      backgroundColor: [200, 200, 200],
       textColor: [0, 0, 0],
       techUsed: ['C++', 'Java', 'URCaps', 'XML-RPC', '3D-modeling', 'Electrical Design', 'Git', 'SCRUM']
     },
@@ -88,7 +88,7 @@ export class HomeComponent {
       buttonText: 'DETAILS',
       buttonLink: 'https://github.com/Andreasgdp/Drawing-robot-semester-1',
       image: '../../assets/vid/drawing-robot-timelapse.mp4',
-      backgroundColor: [255, 252, 245],
+      backgroundColor: [200, 200, 200],
       textColor: [0, 0, 0],
       techUsed: ['Java', 'PLC Programming', 'Git', 'SCRUM']
     }

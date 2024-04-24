@@ -9,8 +9,9 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Fira Code';
-    background-color: #0C0C0C;
     z-index: 10000;
+    background-color: rgb(var(--bg-color));
+    color: rgb(var(--text-color));
 }
 
 nav {
@@ -43,15 +44,17 @@ nav .logo a {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
+    cursor: pointer;
+    align-items: center;
 }
 nav ul li {
     margin-left: 2.0vw;
 }
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: rgb(var(--text-color));
     font-size: clamp(1rem, 0.8vw, 2.5rem);
     font-weight: light;
     padding: 4px 8px;
@@ -62,7 +65,13 @@ nav ul li a span {
 }
 
 nav ul li a:hover {
-    background-color: #1d1d1d;
+    background-color: rgb(var(--text-color), 0.1);
+}
+
+.vertical-line {
+    height: 2vh;
+    border-left: clamp(0.1rem, 0.1vw, 0.2rem) solid;
+    border-left-color: rgb(var(--text-color));
 }
 
 .hamburger {
@@ -73,7 +82,7 @@ nav ul li a:hover {
 .hamburger .line {
     width: 25px;
     height: 1px;
-    background-color: #ffffff;
+    background-color: rgb(var(--text-color));
     display: block;
     margin: 7px auto;
     transition: all 0.3s ease-in-out;
@@ -111,13 +120,13 @@ nav ul li a:hover {
     width: 60%;
     height: 100vh;
     padding: 20% 0;
-    background: #313131;
+    background: rgb(var(--bg-menubar-color));
     transition: all 0.5s ease-in;
     z-index: 100;
 }
 .active {
     left: 0;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgb(var(--text-color), 0.2) 0px 8px 24px;
 }
 
 .menubar ul {
@@ -130,7 +139,7 @@ nav ul li a:hover {
 
 .menubar ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: rgb(var(--text-color));
     font-size: 100%;
     font-weight: 400;
     padding: 5px 10px;
@@ -142,8 +151,9 @@ nav ul li a:hover {
 }
 
 .menubar ul li a:hover {
-    background-color: #1d1d1d;
+    background-color: rgb(var(--text-color), 0.1);
 }
+
 @media screen and (max-width: 790px) {
     .hamburger {
         display: block;

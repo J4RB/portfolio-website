@@ -31,14 +31,7 @@
 .line-nums-fade {
 	display: flex;
 	flex-direction: column;
-	background: linear-gradient(0deg,
-		rgba(255,255,255,0.0) 0%,
-		rgba(255,255,255,0.2) 5%,
-		rgba(255,255,255,0.5) 15%,
-		rgba(255,255,255,0.5) 85%,
-		rgba(255,255,255,0.2) 95%,
-		rgba(255,255,255,0.0) 100%
-	);
+	background: var(--line-nums-text-color);
 	color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -57,7 +50,6 @@
 	display: flex;
 	flex-direction: column;
 	padding: 0 15px;
-	color: white;
 	height: auto;
 }
 
