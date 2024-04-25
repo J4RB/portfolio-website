@@ -24,15 +24,14 @@
         <li>
           <a routerLink="/contact"><span>03.</span> Contact</a>
         </li>
-        <li>
-          <div class="vertical-line"></div>
-        </li>
-        <li>
-          <i class="gg-dark-mode" (click)="toggleTheme()"></i>
-        </li>
-        <li class="navbar-links">
+        <div class="vertical-line"></div>
+        <div class="navbar-links">
           <a class="fa fa-linkedin-square fa_custom" href="https://www.linkedin.com/in/jacob-larsen-9b7013239/" target="_blank" style="font-size:22px"></a>
-        </li>
+          <i class="gg-dark-mode" (click)="toggleTheme()"></i>
+        </div>
+        <!-- <li class="navbar-link">
+          <i class="gg-dark-mode" (click)="toggleTheme()"></i>
+        </li> -->
       </ul>
       <div class="hamburger" [class.hamburger-active]="navbarActive" (click)="toggleNav()">
         <span class="line"></span>
