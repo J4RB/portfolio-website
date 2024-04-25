@@ -46,7 +46,6 @@ nav .logo a {
 nav ul {
     display: flex;
     list-style: none;
-    cursor: pointer;
     align-items: center;
 }
 nav ul li {
@@ -72,6 +71,10 @@ nav ul li a:hover {
     height: 2vh;
     border-left: clamp(0.1rem, 0.1vw, 0.2rem) solid;
     border-left-color: rgb(var(--text-color));
+}
+
+.gg-dark-mode {
+    cursor: pointer;
 }
 
 .hamburger {
