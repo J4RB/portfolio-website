@@ -63,7 +63,7 @@ nav ul li a span {
     color: #33A18E;
 }
 
-nav ul li a:hover {
+nav ul li a:hover:not(.fa_custom) {
     background-color: rgb(var(--text-color), 0.1);
 }
 
@@ -75,6 +75,16 @@ nav ul li a:hover {
 
 .gg-dark-mode {
     cursor: pointer;
+    color: rgb(var(--text-color));
+}
+
+.fa-custom {
+    transform: scale(1.25);
+    color: rgb(var(--text-color));
+}
+
+nav ul .navbar-links {
+    margin-left: 15px;
 }
 
 .hamburger {
@@ -174,15 +184,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.fa-custom {
-    transform: scale(1.25);
-    color: rgb(var(--text-color));
-}
-
-.gg-dark-mode {
-    color: rgb(var(--text-color));
 }
 
 @media screen and (max-width: 790px) {
