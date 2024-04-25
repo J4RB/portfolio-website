@@ -159,32 +159,53 @@ a.button[href="#"] {
 }
 
 @media screen and (max-width: 790px) {
+    .case-study-wrapper {
+        height: 90dvh;
+    }
+
     .case-study-desc {
         position: absolute;
-        background-color: rgb(255, 255, 255, 0.7);
+        // background-color: rgb(255, 255, 255, 0.7);
         padding: 0 3%;
         margin: 0 5%;
-        max-height: 65vh;
-        color: rgb(0, 0, 0);
+        height: 90dvh;
+        width: 80vw;
+        color: rgb(255, 255, 255);
         z-index: 75;
+        text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+    }
+
+    .case-study-desc-text {
+        height: 70%;
     }
 
     .case-study-desc h3 {
-        color: rgb(0, 0, 0);
+        color: white;
     }
 
     .case-study-desc h1 {
-        color: rgb(0, 0, 0);
+        color: white;
+    }
+
+    .tech-used span {
+        background-color: transparent;
+        filter: brightness(85%);
+        color: white;
+        border: white 1px solid;
+    }
+
+    .button-wrapper {
+        margin-bottom: 20%;
     }
 
     .button {
-        color: rgb(0, 0, 0);
-        border: rgb(0, 0, 0) 2px solid;
+        color: white;
+        border: white 2px solid;
     }
 
     a.button[href="#"] {
-        color: rgb(0, 0, 0, 0.5);
-        border: rgb(0, 0, 0, 0.5)  2px solid;
+        color: rgb(255, 255, 255, 0.5);
+        border: rgb(255, 255, 255, 0.5)  2px solid;
         // border: 2px solid rgba(255, 255, 255, 0.5);
     }
 
