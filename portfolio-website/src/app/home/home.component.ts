@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, ViewChild, ElementRef, HostListener, ViewChildren, QueryList } from '@angular/core';
 import { NgFor } from '@angular/common';
 
 import { CaseStudyComponent } from '../components/case-study/case-study.component';
@@ -96,18 +96,55 @@ export class HomeComponent {
 
   ngAfterViewInit() {
     this.updateLineHeight();
+    this.adjustCaseStudyWrapperHeight();
+  }
+
+  @HostListener('window:load')
+  onWindowLoad() {
+    this.adjustCaseStudyWrapperHeight();
   }
 
   @HostListener('window:resize')
   onWindowResize() {
     this.updateLineHeight();
+    this.adjustCaseStudyWrapperHeight();
   }
 
+  // Update the height of the vertical line in the div and p elements in hero section
   private updateLineHeight() {
     this.linePRef.nativeElement.style.height = `${this.pRef.nativeElement.offsetHeight+ 10}px`;
     this.lineDivRef.nativeElement.style.height = `${this.heroRef.nativeElement.offsetHeight + 10}px`;
   }
 
+  // Make all case-study-wrapper elements the same height
+  private adjustCaseStudyWrapperHeight() {
+    // Set the height of the case-study-desc elements to fit-content
+    const caseStudyDescElements = document.querySelectorAll('.case-study-desc');
+    this.setElementStyle(caseStudyDescElements, 'height', 'fit-content');
+    this.setElementStyle(caseStudyDescElements, 'maxHeight', 'fit-content');
+
+    // Find the maximum height of the case-study-desc elements
+    const maxHeight = this.getMaxHeight(caseStudyDescElements);
+    console.log(maxHeight);
+
+    // Set the height of all elements to the maximum height
+    const elements = document.querySelectorAll('.case-study-wrapper, .case-study-desc, .case-study-img img, .case-study-img video');
+    this.setElementStyle(elements, 'height', `${maxHeight}px`);
+    this.setElementStyle(elements, 'maxHeight',  `${maxHeight}px`);
+  }
+
+  private getMaxHeight(elements: NodeListOf<Element>): number {
+    let maxHeight = 0;
+    elements.forEach((element: Element) => {
+      const height = (element as HTMLElement).offsetHeight;
+      maxHeight = height > maxHeight ? height : maxHeight;
+    });
+    return maxHeight;
+  }
+
+  private setElementStyle(elements: NodeListOf<Element>, property: string, value: string) {
+    elements.forEach((element: Element) => {
+      (element as HTMLElement).style.setProperty(property, value);
+    });
+  }
 }
-
-

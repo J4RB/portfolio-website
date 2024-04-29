@@ -14,8 +14,8 @@
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 90vw;
-    height: 65vh;
+    width: 90%;
+    // height: 1px;
     max-width: 4000px;
     // min-width: 0;
 }
@@ -24,66 +24,77 @@
     display: flex;
     flex-direction: column;
     color: rgb(var(--cs-text-color));
-    margin: 0 2vw;
+    margin: 0 3%;
     width: 50%;
+    // height: 1px;
     max-width: 800px;
     min-width: 35%;
     z-index: 100;
+    justify-content: space-between;
 }
 
 .case-study-desc-logo {
-    width: 40%;
-    height: 11%;
+    // width: auto;
+    // height: 5vw; // maybe a %? and ignore random white space?
+    height: 15%;
+    max-width: 600px;
+    max-height: 200px;
+    min-height: 70px;
     object-fit: contain;
-    object-position: left;
+    object-position: left top;
     pointer-events: none;
-    margin-top: 5%;
+    padding: max(30px, 5%) 0 1% 0;
 }
 
 .case-study-desc-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 60%;
+    height: fit-content;
+    margin: max(50px, 8%) 0 max(60px, 10%) 0;
 }
 
 .case-study-desc h3 {
-    font-size: clamp(0.8rem, 1vw, 1.5rem);
+    font-size: clamp(0.8rem, 1vw, 2.5rem);
     font-weight: 500;
     color: rgb(var(--cs-text-color));
-    padding: 10px 0;
+    padding: max(10px, 1.5%) 0;
 }
 
 .case-study-desc h1 {
-    font-size: clamp(1.2rem, 2vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.7vw, 3.5rem);
     font-weight: 700;
     color: rgb(var(--cs-text-color));
-    padding: 10px 0;
+    padding: max(10px, 1.5%) 0;
+    text-wrap: balance;
 }
 
 .case-study-desc p {
-    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    font-size: clamp(0.8rem, 0.8vw, 2rem);
     font-weight: 400;
     // max-height: fit-content;
-    padding: 10px 0;
+    padding: max(8px, 1.5%) 0;
+    text-wrap: balance;
 }
 
 .tech-used {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px 0;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    gap: 0.5vh 0.5vw;
+    padding: max(10px, 1.5%) 0;
+    // margin-top: 1vh;
+    // margin-bottom: 1vh;
+    width: 80%;
 }
 
 .tech-used span {
     background-color: rgb(var(--cs-bg-color));
     filter: brightness(85%);
     border-radius: 5em / 5em;
-    padding: 5px 10px;
-    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    padding: max(5px, 0.5%) max(10px, 1.5%);
+    font-size: clamp(0.6rem, 0.6vw, 2rem);
     color: rgb(var(--cs-text-color));
+    text-wrap: nowrap;
 }
 
 // .tech-used span:hover {
@@ -93,36 +104,28 @@
 // }
 
 .button-wrapper {
-    margin-top: auto;
-    margin-bottom: 10%;
+    height: fit-content;
 }
-
-// .button-wrapper:has(.button[href="#"]) {
-//     border: 2px solid rgba(255, 255, 255, 0.5);
-// }
 
 .button {
     background: transparent;
     color: rgb(var(--cs-text-color));
     text-align: center;
-    // border: 2px solid rgb(255, 255, 255);
-    // padding: 10px 10px;
-    font-size: clamp(0.6rem, 1.5vw, 1rem);
+    font-size: clamp(0.6rem, 0.8vw, 2rem);
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
-    // width: fit-content;
     padding: 0.5rem 0.5rem;
     width: fit-content;
-    border: rgb(var(--cs-text-color)) 2px solid;
+    border: rgb(var(--cs-text-color)) min(4px, 0.2vh) solid;
+    margin-bottom: max(30px, 5%);
 }
   
 a.button[href="#"] {
     pointer-events: none;
     cursor: not-allowed;
     color: rgba(var(--cs-text-color), 0.5);
-    border: rgba(var(--cs-text-color), 0.5) 2px solid;
-    // border: 2px solid rgba(255, 255, 255, 0.5);
+    border: rgba(var(--cs-text-color), 0.5) min(4px, 0.2vh) solid;
 }
 
 .case-study-wrapper .case-study-desc a:hover:not(.active) {
@@ -136,12 +139,7 @@ a.button[href="#"] {
     max-width: 65%;
 }
 
-.case-study-img img, video {
-    // display: flex;
-    // flex-basis: 50%;
-    // position: absolute;
-    // right: 0;
-    // bottom: 0;
+.case-study-img img, .case-study-img video {
     width: auto;
     max-width: 100%;
     height: 100%;
@@ -160,23 +158,17 @@ a.button[href="#"] {
 
 @media screen and (max-width: 790px) {
     .case-study-wrapper {
-        height: 90vh;
+        width: 95%;
     }
 
     .case-study-desc {
         position: absolute;
-        // background-color: rgb(255, 255, 255, 0.7);
         padding: 0 3%;
         margin: 0 5%;
-        height: 90vh;
-        width: 80vw;
+        width: 85%;
         color: rgb(255, 255, 255);
         z-index: 75;
-        text-shadow: rgb(0, 0, 0) 0px 0px 10px;
-    }
-
-    .case-study-desc-text {
-        height: 70%;
+        text-shadow: rgb(0, 0, 0) 0px 0px 5px;
     }
 
     .case-study-desc h3 {
@@ -194,10 +186,6 @@ a.button[href="#"] {
         border: white 1px solid;
     }
 
-    .button-wrapper {
-        margin-bottom: 20%;
-    }
-
     .button {
         color: white;
         border: white 2px solid;
@@ -213,12 +201,5 @@ a.button[href="#"] {
         max-width: 100%;
         width: 100%;
         justify-content: right;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .case-study-desc {
-        // max-width: 75vw;
-        width: 80vw;
     }
 }

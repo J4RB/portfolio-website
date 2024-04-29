@@ -21,9 +21,9 @@
                     <span *ngFor="let tech of techUsed">{{ tech }}</span>
                 </div>
             </div>
-            <div class="button-wrapper">
-                <a class="button" href="{{buttonLink}}" target="_blank">{{buttonText}}</a>
-            </div>
+            <!-- <div class="button-wrapper"> -->
+            <a class="button" href="{{buttonLink}}" target="_blank">{{buttonText}}</a>
+            <!-- </div> -->
         </div>
         <div class="case-study-img">
             <img *ngIf="caseStudyType === 'image'" [src]="image" alt="case-study-img">
