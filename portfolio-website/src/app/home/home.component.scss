@@ -52,6 +52,7 @@
 
 .section-and-text p {
     font-size: clamp(0.8rem, 0.8vw, 1.8rem);
+    text-wrap: pretty;
 }
 
 .section {
