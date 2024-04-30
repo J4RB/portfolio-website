@@ -140,7 +140,7 @@ a.button[href="#"] {
 }
 
 .case-study-img img, .case-study-img video {
-    width: auto;
+    width: 100%;
     max-width: 100%;
     height: 100%;
     object-fit: cover;
@@ -161,14 +161,20 @@ a.button[href="#"] {
         width: 95%;
     }
 
+    .case-study-img img, .case-study-img video {
+        background-color: rgb(var(--cs-bg-color));
+        filter: brightness(40%);
+    }
+
     .case-study-desc {
+        filter: none;
         position: absolute;
         padding: 0 3%;
         margin: 0 5%;
         width: 85%;
         color: rgb(255, 255, 255);
         z-index: 75;
-        text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+        // text-shadow: rgb(0, 0, 0) 0px 0px 5px;
     }
 
     .case-study-desc h3 {
