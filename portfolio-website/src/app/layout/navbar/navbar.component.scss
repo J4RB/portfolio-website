@@ -56,7 +56,7 @@ nav ul li a {
     color: rgb(var(--text-color));
     font-size: clamp(1rem, 0.8vw, 2.5rem);
     font-weight: light;
-    padding: 4px 0 4px 8px;
+    padding: 4px 8px 4px 8px;
     border-radius: 5px;
 }
 nav ul li a span {
@@ -79,6 +79,7 @@ nav ul li a:hover:not(.fa_custom) {
     align-items: center;
     text-decoration: none;
     gap: 20px;
+    padding-left: 8px;
 }
 
 .navbar-links a {
